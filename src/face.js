@@ -47,7 +47,7 @@ function Face(props) {
         faceapi.nets.faceLandmark68Net.load("/models"),
         faceapi.nets.faceRecognitionNet.load("/models"),
         faceapi.nets.faceExpressionNet.load("/models"),
-        faceapi.nets.ageGenderNet.loadFromUri("./models"),
+        faceapi.nets.ageGenderNet.loadFromUri("/models"),
       ]).then(handleImage)
       .catch((e) => console.log(e));
     }

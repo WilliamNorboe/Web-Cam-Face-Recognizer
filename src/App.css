@@ -39,6 +39,12 @@ canvas.photo{
 .buttons{
   display: flex;
   justify-content: center;
+  gap: 5px;
+}
+
+button{
+  background-color: beige;
+  border-radius: 20px;
 }
 .App{
   display: flex;
@@ -47,13 +53,23 @@ canvas.photo{
   margin: 20px;
 }
 
-body{
-  width:100%;
-  height: 100%;
-}
 @media only screen and (max-width: 991px) {
+  canvas, .player, .example{
+    width:705px;
+    height:487.5px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
   canvas, .player, .example{
     width:470px;
     height:325px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  canvas, .player, .example{
+    width:313.33333;
+    height:216.66667px;
   }
 }

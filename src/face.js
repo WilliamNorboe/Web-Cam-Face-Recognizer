@@ -6,10 +6,13 @@ import * as faceapi from "face-api.js";
 
 function Face(props) {
 
-    let example = document.querySelector(".example");
-    let width = example.clientWidth;
-    let height = example.clientHeight;
+    let example = getComputedStyle(document.querySelector(".example"));
+    let width = Number(example.width.split('p')[0]);
+    let height = Number(example.height.split('p')[0]);
+    console.log(height);
 
+    // width = document.querySelector(".example").clientWidth;
+    // height = document.querySelector(".example").clientHeight;
   const imgRef = useRef();
   const canvasRef = useRef();
 
@@ -56,12 +59,12 @@ function Face(props) {
   return (
     <div className="app">
       <img
-
       crossOrigin='anonymous'
       ref = {imgRef}
       src = {timg}
-      alt = "" className = "example"/>
-      <canvas ref = {canvasRef} width = {width} height = {height} />
+      alt = "" className = "example"
+      />
+      <canvas ref = {canvasRef}  /> 
     </div>
   );
 }

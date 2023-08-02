@@ -1,12 +1,16 @@
+*{
+  box-sizing: border-box;
+}
 .app{
   display: flex;
 }
 
 .test{
   color: transparent;
+  display: none;
 }
 
-.example{
+canvas, .player, .example{
   width: 940px;
   height: 650px;
 }
@@ -16,9 +20,10 @@ canvas{
   position: absolute;
 }
 
+
 .player{
-  width: 940px;
-  height: 940px
+  justify-content: center;
+  border-radius: 20px;
 }
 
 canvas.photo{
@@ -28,4 +33,27 @@ canvas.photo{
 .wedcam-video{
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+.App{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+body{
+  width:100%;
+  height: 100%;
+}
+@media only screen and (max-width: 991px) {
+  canvas, .player, .example{
+    width:470px;
+    height:325px;
+  }
 }

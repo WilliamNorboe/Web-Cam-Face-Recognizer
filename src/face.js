@@ -43,11 +43,11 @@ function Face(props) {
   useEffect(()=>{
     const loadModels = () =>{
       Promise.all([
-        faceapi.nets.tinyFaceDetector.load("/models"),
-        faceapi.nets.faceLandmark68Net.load("/models"),
-        faceapi.nets.faceRecognitionNet.load("/models"),
-        faceapi.nets.faceExpressionNet.load("/models"),
-        faceapi.nets.ageGenderNet.loadFromUri("/models"),
+        faceapi.nets.tinyFaceDetector.load("/Web-Cam-Face-Recognizer/models"),
+        faceapi.nets.faceLandmark68Net.load("/Web-Cam-Face-Recognizer/models"),
+        faceapi.nets.faceRecognitionNet.load("/Web-Cam-Face-Recognizer/models"),
+        faceapi.nets.faceExpressionNet.load("/Web-Cam-Face-Recognizer/models"),
+        faceapi.nets.ageGenderNet.loadFromUri("/Web-Cam-Face-Recognizer/models"),
       ]).then(handleImage)
       .catch((e) => console.log(e));
     }

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Web-Cam-Face-Recognizer/static/css/main.9d5301d6.css",
-    "main.js": "/Web-Cam-Face-Recognizer/static/js/main.01556258.js",
+    "main.js": "/Web-Cam-Face-Recognizer/static/js/main.2eda8fd5.js",
     "static/media/download.jpg": "/Web-Cam-Face-Recognizer/static/media/download.42ac1f4d7a0dc77eb70d.jpg",
     "index.html": "/Web-Cam-Face-Recognizer/index.html",
     "main.9d5301d6.css.map": "/Web-Cam-Face-Recognizer/static/css/main.9d5301d6.css.map",
-    "main.01556258.js.map": "/Web-Cam-Face-Recognizer/static/js/main.01556258.js.map"
+    "main.2eda8fd5.js.map": "/Web-Cam-Face-Recognizer/static/js/main.2eda8fd5.js.map"
   },
   "entrypoints": [
     "static/css/main.9d5301d6.css",
-    "static/js/main.01556258.js"
+    "static/js/main.2eda8fd5.js"
   ]
 }
